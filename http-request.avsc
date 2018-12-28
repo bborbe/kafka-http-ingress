@@ -1,0 +1,23 @@
+{
+	"type": "record",
+	"name": "HttpRequest",
+	"fields": [
+		{
+			"name": "Header",
+			"type": {
+				"type": "map",
+				"values": {
+					"type": "array",
+					"items": {
+						"name": "value",
+						"type": "string"
+					}
+				}
+			}
+		},
+		{
+			"name": "Body",
+			"type": "bytes"
+		}
+	]
+}
